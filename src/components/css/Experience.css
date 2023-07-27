@@ -1,0 +1,56 @@
+.experienceContainer{
+    width: 45%;
+}
+
+.experienceContainer > div{
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.experienceContainer > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.experience{
+    display: ;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experiences{
+    display: flex;   
+    gap: 1rem;
+}
+
+.experiencesIcon{
+    margin-top: 5px;
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1024px){
+    .experienceContainer{
+        width: 75%;
+    }
+
+    .experience{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+}
+  
+@media screen and (max-width: 600px){
+    .experienceContainer{
+        width: 85%;
+    }
+
+    .experience{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+}
